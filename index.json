@@ -5,14 +5,16 @@
   "repository": "https://github.com/YOUR_USERNAME/luhut-binshar",
   "categories": [
     "XSS",
-    "SQLi", 
+    "SQLi",
     "SSRF",
     "LFI",
     "RFI",
     "CMDi",
     "SSTI",
     "Open Redirect",
-    "CSRF"
+    "CSRF",
+    "2FA Bypass",
+    "WAF Bypass"
   ],
   "last_updated": "2026-01-13"
 }
