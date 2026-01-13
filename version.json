@@ -1,0 +1,13 @@
+{
+    "version": "1.0.0",
+    "release_date": "2026-01-13",
+    "changelog": [
+        {
+            "version": "1.0.0",
+            "date": "2026-01-13",
+            "changes": [
+                "Initial release with XSS, SQLi, SSRF, LFI, RFI, CMDi, SSTI, Open Redirect, CSRF payloads"
+            ]
+        }
+    ]
+}

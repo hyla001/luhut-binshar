@@ -1,0 +1,79 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Payload Schema",
+    "type": "object",
+    "required": [
+        "id",
+        "title",
+        "payload",
+        "category",
+        "subcategory"
+    ],
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "Unique identifier (e.g., xss-reflected-001)"
+        },
+        "title": {
+            "type": "string",
+            "description": "Short descriptive title"
+        },
+        "payload": {
+            "type": "string",
+            "description": "The actual payload content"
+        },
+        "category": {
+            "type": "string",
+            "enum": [
+                "XSS",
+                "SQLi",
+                "SSRF",
+                "LFI",
+                "RFI",
+                "CMDi",
+                "SSTI",
+                "Open Redirect",
+                "CSRF"
+            ]
+        },
+        "subcategory": {
+            "type": "string",
+            "description": "Subcategory (e.g., Reflected, Stored, DOM-based for XSS)"
+        },
+        "context": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Where payload can be used (html, input, url, header)"
+        },
+        "level": {
+            "type": "string",
+            "enum": [
+                "low",
+                "medium",
+                "high"
+            ],
+            "description": "Complexity/bypass level"
+        },
+        "tags": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Searchable tags"
+        },
+        "notes": {
+            "type": "string",
+            "description": "Additional notes or usage tips"
+        },
+        "source": {
+            "type": "string",
+            "enum": [
+                "github",
+                "user"
+            ],
+            "default": "github"
+        }
+    }
+}

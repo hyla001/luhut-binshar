@@ -1,0 +1,18 @@
+{
+  "name": "LUHUT BINSHAR",
+  "version": "1.0.0",
+  "description": "Security Testing Payload Repository - Organized collection of payloads for penetration testing",
+  "repository": "https://github.com/YOUR_USERNAME/luhut-binshar",
+  "categories": [
+    "XSS",
+    "SQLi", 
+    "SSRF",
+    "LFI",
+    "RFI",
+    "CMDi",
+    "SSTI",
+    "Open Redirect",
+    "CSRF"
+  ],
+  "last_updated": "2026-01-13"
+}
